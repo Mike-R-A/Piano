@@ -30,7 +30,7 @@ class BlackNote extends Note {
         this.draw(colour);
     }
 
-    draw(colour = "black") {
+    draw(colour = "#EEEEEE") {
         this.context.fillStyle = colour;
         this.context.beginPath();
         this.context.moveTo(this.left, this.top);
@@ -103,8 +103,7 @@ function drawKeyboard(canvas) {
 
     let topLeft = LEFT;
     let keys = [];
-
-    context.strokeStyle = "black";
+    context.strokeStyle = "#EEEEEE";
     for (let i = 1; i <= NUMBEROFOCTAVES; i++) {
         let c1 = new WhiteNote('c' + i, TOP, topLeft, context, false, true);
         keys.push(c1);
@@ -136,7 +135,6 @@ function drawKeyboard(canvas) {
     let highest = keys.findIndex(k => k.name == canvas.dataset.highest);
     let shownKeys = keys.slice(lowest, highest + 1);
 
-    console.log(canvas.dataset, lowest, highest, shownKeys);
     const lowestKey = keys[lowest];
     const highestKey = keys[highest];
     let lowestLeft = lowestKey.left;
@@ -147,12 +145,12 @@ function drawKeyboard(canvas) {
     keys.forEach(n => {
         n.left = n.left - lowestLeft;
     });
-
     shownKeys.forEach(n => {      
         n.draw();
     });
 
     let noteSets = canvas.dataset.notes.split(';');
+    context.strokeStyle = "black";
     noteSets.forEach(noteSet => {
         let noteSetSections = noteSet.split(':');
         let notes = noteSetSections.length > 0 ? noteSetSections[0].split(',') : [];
@@ -162,26 +160,6 @@ function drawKeyboard(canvas) {
         });
     });
 }
-
-
-
-
-
-// for (let i = 0; i < NUMBEROFOCTAVES; i++) {
-
-    // let right1 = drawBlackNote(TOP, right0);
-    // let right2 = drawWhiteNote(TOP, right1, true, true);
-    // let right3 = drawBlackNote(TOP, right2);
-    // let right4 = drawWhiteNote(TOP, right3, true, false);
-    // let right5 = drawWhiteNote(TOP, right4, false, true);
-    // let right6 = drawBlackNote(TOP, right5);
-    // let right7 = drawWhiteNote(TOP, right6, true, true);
-    // let right8 = drawBlackNote(TOP, right7);
-    // let right9 = drawWhiteNote(TOP, right8, true, true);
-    // let right10 = drawBlackNote(TOP, right9);
-    // topLeft = drawWhiteNote(TOP, right10, true, false);  
-// }
-
 
 
 

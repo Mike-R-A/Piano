@@ -19,7 +19,7 @@
 <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <a class="navbar-brand"
-           href="index.html">Piano</a>
+           href="/home">Piano</a>
         <button class="navbar-toggler"
                 type="button"
                 data-toggle="collapse"
@@ -43,14 +43,14 @@
             </dt>
             <dd class="col-sm-9">
                 <p>The shortest possible distance between two notes on a piano.</p>
-                <canvas class="keyboard" height="200" width="500" data-lowest="c1" data-highest="c2" data-notes="c1,db1:#ff6f69;e1,f1:#ffcc5c;bb1,b1:#96ceb4"></canvas>
+                <canvas class="keyboard" height="200" width="450" data-lowest="c1" data-highest="c2" data-notes="c1,db1:#ff6f69;e1,f1:#ffcc5c;bb1,b1:#96ceb4"></canvas>
             </dd>
             <dt class="col-sm-3">
                 Tone
             </dt>
             <dd class="col-sm-9">
                 <p>A distance of two semitones</p>
-                <canvas class="keyboard" height="200" width="500" data-lowest="c1" data-highest="c2" data-notes="db1,eb1:#ff6f69;f1,g1:#ffcc5c;bb1,c2:#96ceb4"></canvas>
+                <canvas class="keyboard" height="200" width="450" data-lowest="c1" data-highest="c2" data-notes="db1,eb1:#ff6f69;f1,g1:#ffcc5c;bb1,c2:#96ceb4"></canvas>
             </dd>
             <dt class="col-sm-3">
                 Octave
@@ -58,7 +58,7 @@
             <dd class="col-sm-9">
                 <p>12 semitones. The distance you travel to reach the closest note that is the 'same' note but higher or
                 lower.</p>
-                <canvas class="keyboard" height="200" width="500" data-lowest="c1" data-highest="g2" data-notes="e1,e2:#96ceb4"></canvas>
+                <canvas class="keyboard" height="200" width="450" data-lowest="db1" data-highest="gb2" data-notes="e1,e2:#96ceb4"></canvas>
             </dd>
             <dt class="col-sm-3">
                 Scale/Key
@@ -79,12 +79,12 @@
                 <p>Take a note (this will be your tonic), then move up the notes by the following steps - tone, tone,
                 semitone, tone, tone, tone, semitone. That is 2 tones and a semitone, then 3 tones and a semitone.
                 Repeat the pattern up the piano.</p>
-                <div>Eb major</div>
-                <canvas class="keyboard" height="200" width="500" data-lowest="c1" data-highest="g2" data-notes="eb1,f1,g1,ab1,bb1,c2,d2,eb2:#ff6f69"></canvas>
-                <div>F major</div>
-                <canvas class="keyboard" height="200" width="500" data-lowest="c1" data-highest="g2" data-notes="f1,g1,a1,bb1,c2,d2,e2,f2:#ffcc5c"></canvas>
-                <div>C major</div>
-                <canvas class="keyboard" height="200" width="500" data-lowest="c1" data-highest="g2" data-notes="c1,d1,e1,f1,g1,a1,b1,c2:#96ceb4"></canvas>
+                <div class="figure-caption">Eb major</div>
+                <canvas class="keyboard" height="200" width="450" data-lowest="db1" data-highest="gb2" data-notes="eb1,f1,g1,ab1,bb1,c2,d2,eb2:#ff6f69"></canvas>
+                <div class="figure-caption">F major</div>
+                <canvas class="keyboard" height="200" width="450" data-lowest="db1" data-highest="gb2" data-notes="f1,g1,a1,bb1,c2,d2,e2,f2:#ffcc5c"></canvas>
+                <div class="figure-caption">C major</div>
+                <canvas class="keyboard" height="200" width="450" data-lowest="c1" data-highest="e2" data-notes="c1,d1,e1,f1,g1,a1,b1,c2:#96ceb4"></canvas>
             </dd>
         </dl>
         <div class="card">
@@ -108,6 +108,7 @@
                 </p>
             </div>
         </div>
+        <a href="/chords1" class="link-primary mt-1 mb-3 float-right">Next - Chords 1</a>
     </div>
 
 
@@ -123,7 +124,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
             integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
             crossorigin="anonymous"></script>
-    <script src="keyboard.js"></script>
+    <script src="/keyboard.js"></script>
 </body>
 
 </html>

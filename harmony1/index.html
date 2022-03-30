@@ -19,7 +19,7 @@
 <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <a class="navbar-brand"
-           href="index.html">Piano</a>
+           href="/home">Piano</a>
         <button class="navbar-toggler"
                 type="button"
                 data-toggle="collapse"
@@ -36,74 +36,67 @@
         </div>
     </nav>
     <div class="container">
-        <h2>Chords 1</h2>
+        <h2>Harmony 1</h2>
         <dl class="row">
             <dt class="col-sm-3">
-                Chord
+                Scale degree
             </dt>
             <dd class="col-sm-9">
-                A selection of notes built up by playing every other note of a scale together. After building up the
-                chord this way, notes can then be played at different octaves, or omitted, to produce different
-                'voicings'.
+                The position of a note in a scale. The major scale has 7 notes so these are numbered from 1 - 7
+                starting with 1 for the tonic.
             </dd>
             <dt class="col-sm-3">
-                Voicing
+                Triads of the major scale
             </dt>
             <dd class="col-sm-9">
-                A particular selection of notes of a chord, played in a particular order.
+                Build a three note chord (root position triad) from each degree of a major scale in turn.
+                The triads you will get will be 1 major, 2 minor, 3 minor, 4 major, 5 major, 6 minor, 7 diminished.
             </dd>
             <dt class="col-sm-3">
-                Triad
+                Fifth
             </dt>
             <dd class="col-sm-9">
-                A chord made up of three notes.
+                The distance between the top and bottom notes of a root position triad.
             </dd>
             <dt class="col-sm-3">
-                Minor Third
+                Perfect fifth
             </dt>
             <dd class="col-sm-9">
-                A distance of a tone and a half
+                The distance between the top and bottom notes of a root position major or minor triad.
             </dd>
             <dt class="col-sm-3">
-                Major Third
+                Diminished fifth
             </dt>
             <dd class="col-sm-9">
-                A distance of two tones
+                The distance between the top and bottom notes of a root position diminished triad.
             </dd>
             <dt class="col-sm-3">
-                Major triad
+                Augmented fifth
             </dt>
             <dd class="col-sm-9">
-                A chord made up of a major third with a minor third on top.
+                The distance between the top and bottom notes of a root position augmented triad.
             </dd>
             <dt class="col-sm-3">
-                Minor triad
+                Circle of fifths
             </dt>
             <dd class="col-sm-9">
-                A chord made up of a minor third with a major third on top.
+                Take any note. Drop down a perfect fifth from that note. Continue doing this (sometimes jump
+                up an octave to stay on the piano). You will cycle through all twelve notes before returning to where
+                you started.
             </dd>
             <dt class="col-sm-3">
-                Diminished triad
+                Diatonic circle of fifths
             </dt>
             <dd class="col-sm-9">
-                A chord made up of two stacked minor thirds.
-            </dd>
-            <dt class="col-sm-3">
-                Augmented triad
-            </dt>
-            <dd class="col-sm-9">
-                A chord made up of two stacked major thirds.
-            </dd>
-            <dt class="col-sm-3">
-                Inversions
-            </dt>
-            <dd class="col-sm-9">
-                A triad as described above is in 'root position'. If you take the note off the bottom and raise it
-                up an octave so it is now on the top of the chord, the chord is considered to be the same chord in a
-                different
-                'inversion'. This is first inversion. Repeat the process to get second inversion.
+                The circle of fifths, keeping to the notes within a particular scale/key rather than always using a
+                perfect fifth. Use the fifths as formed by the triads of the scale.
             </dd>
         </dl>
+
+        Play the triads of the major scale through the diatonic circle of fifths. With the notes of the scale numbered
+        from 1-7 the triads should go in this order 1 (major), 4 (major), 7 (diminished), 3 (minor), 6 (minor), 2
+        (minor), 5 (major), 1 (back home).
+
     </div>
 
 
@@ -119,7 +112,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
             integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
             crossorigin="anonymous"></script>
-    <script src="keyboard.js"></script>
+    <script src="/keyboard.js"></script>
 </body>
 
 </html>

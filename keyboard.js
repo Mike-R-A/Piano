@@ -95,6 +95,7 @@ canvases.forEach(canvas => {
 });
 
 function drawKeyboard(canvas) {
+    canvas.style.width = '100%';
     let context = canvas.getContext("2d");
 
     const TOP = 0;

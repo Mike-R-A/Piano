@@ -28,65 +28,140 @@
                 Triads of the major scale
             </dt>
             <dd class="col-sm-9">
-                If you build three note chords (root position triads) from each degree of a major scale in turn,
-                the triads you will get will be 1 major, 2 minor, 3 minor, 4 major, 5 major, 6 minor, 7 diminished.
+                <div class="figure-caption">D major scale</div>
+                <canvas class="keyboard" data-lowest="c1" data-highest="g2" data-notes="d1,e1,gb1,g1,a1,b1,db2,d2:1"></canvas>
+                <p>
+                    If you build three note chords (root position triads) from each degree of a major scale in turn,
+                    the triads you will get will be 
+                </p>
+                <p>
+                    1 major,
+                </p>
+                <canvas class="keyboard" data-lowest="c1" data-highest="g2" data-notes="d1,gb1,a1:1"></canvas>
+                <p>
+                    2 minor,
+                </p>
+                <canvas class="keyboard" data-lowest="c1" data-highest="g2" data-notes="e1,g1,b1:1"></canvas>
+                <p>
+                    3 minor,
+                </p>
+                <canvas class="keyboard" data-lowest="c1" data-highest="g2" data-notes="gb1,a1,db2:1"></canvas>
+                <p>
+                    4 major,
+                </p>
+                <canvas class="keyboard" data-lowest="c1" data-highest="g2" data-notes="g1,b1,d2:1"></canvas>
+                <p>
+                    5 major,
+                </p>
+                <canvas class="keyboard" data-lowest="c1" data-highest="g2" data-notes="a1,db2,e2:1"></canvas>
+                <p>
+                    6 minor,
+                </p>
+                <canvas class="keyboard" data-lowest="c1" data-highest="g2" data-notes="b1,d2,gb2:1"></canvas>
+                <p>
+                    7 diminished.
+                </p>
+                <canvas class="keyboard" data-lowest="c1" data-highest="g2" data-notes="db2,e2,g2:1"></canvas>
+                <p>
+                    These are the basic chords used to harmonise a melody in a major key (D major in this case).  
+                    The most commonly used of these chords are the three major chords at scale degrees 1, 4 and 5.
+                    Many simple tunes can be harmonised with just these 3 chords.
+                </p>
             </dd>
             <dt class="col-sm-3">
                 Fifth
             </dt>
             <dd class="col-sm-9">
-                The distance between the top and bottom notes of a root position triad.
+                <p>
+                    The distance between the top and bottom notes of a root position triad.
+                </p>
             </dd>
             <dt class="col-sm-3">
                 Perfect fifth
             </dt>
             <dd class="col-sm-9">
-                The distance between the top and bottom notes of a root position major or minor triad.
-                <canvas class="keyboard" height="200" width="450" data-lowest="db1" data-highest="gb2" data-notes="eb1,bb1:#ff6f69"></canvas>
+                <p>
+                    The distance between the top and bottom notes of a root position major or minor triad.
+                </p>
+                <canvas class="keyboard" data-lowest="c1" data-highest="g2" data-notes="eb1,bb1:2"></canvas>
             </dd>
             <dt class="col-sm-3">
                 Diminished fifth
             </dt>
             <dd class="col-sm-9">
-                The distance between the top and bottom notes of a root position diminished triad.
-                <canvas class="keyboard" height="200" width="450" data-lowest="db1" data-highest="gb2" data-notes="eb1,a1:#ff6f69"></canvas>
+                <p>
+                    The distance between the top and bottom notes of a root position diminished triad.
+                </p>
+                <canvas class="keyboard" data-lowest="c1" data-highest="g2" data-notes="eb1,a1:2"></canvas>
             </dd>
             <dt class="col-sm-3">
                 Augmented fifth
             </dt>
             <dd class="col-sm-9">
-                The distance between the top and bottom notes of a root position augmented triad.
-                <canvas class="keyboard" height="200" width="450" data-lowest="db1" data-highest="gb2" data-notes="eb1,b1:#ff6f69"></canvas>
+                <p>
+                    The distance between the top and bottom notes of a root position augmented triad.
+                </p>
+                <canvas class="keyboard" data-lowest="c1" data-highest="g2" data-notes="eb1,b1:2"></canvas>
             </dd>
             <dt class="col-sm-3">
                 Circle of fifths
             </dt>
             <dd class="col-sm-9">
-                Take any note. Drop down a perfect fifth from that note. Continue doing this (sometimes jump
-                up an octave to stay on the piano). You will cycle through all twelve notes before returning to where
-                you started.
+                <p>
+                    Take any note. Drop down a perfect fifth from that note. Continue doing this (sometimes jump
+                    up an octave to stay on the piano). You will cycle through all twelve notes before returning to where
+                    you started.
+                </p>
+                <canvas class="keyboard" data-lowest="c1" data-highest="c4" data-notes="c4,f3,bb2,eb2,ab1,db1:3"></canvas>
+                <canvas class="keyboard" data-lowest="g1" data-highest="g4" data-notes="gb4,b3,e3,a2,d2,g1,c1:3"></canvas>
             </dd>
             <dt class="col-sm-3">
                 Diatonic circle of fifths
             </dt>
             <dd class="col-sm-9">
-                The circle of fifths, keeping to the notes within a particular scale/key rather than always using a
-                perfect fifth. Use the fifths as formed by the triads of the scale.
+                <p>
+                    The circle of fifths, keeping to the notes within a particular scale/key rather than always using a
+                    perfect fifth. This will cycle through all 7 notes in the scale.
+                </p>
+                <div class="figure-caption">Circle of fifths in D major</div>
+                <canvas class="keyboard" data-lowest="a1" data-highest="d5" data-notes="d5,g4,db4,gb3,b2,e2,a1:1"></canvas>
             </dd>
         </dl>
 
-        <div class="card">
+        <div class="card my-4">
             <div class="card-body">
-                <h5 class="card-title">Major Circle of Fifths Exercise</h5>
+                <h5 class="card-title">Triads of the Major Scale Exercise</h5>
                 <p class="card-text">
-                    Play the triads of the major scale through the diatonic circle of fifths. With the notes of the scale numbered
-                    from 1-7 the triads should go in this order 1 (major), 4 (major), 7 (diminished), 3 (minor), 6 (minor), 2
-                    (minor), 5 (major), 1 (back home).
+                    Play the triads of a major scale up through the degrees of the scale 1 - 7.
+                </p>
+                <p>
+                    Repeat, but this time with the triads in first inversion.
+                </p>
+                <p class="card-text">
+                    Now try second inversion.
+                </p>
+                <p class="card-text">
+                    Now try another scale.
                 </p>
             </div>
         </div>
 
-
+        <div class="card my-4">
+            <div class="card-body">
+                <h5 class="card-title">Diatonic Circle of Fifths Exercise</h5>
+                <p class="card-text">
+                    Play the triads of a major scale through the diatonic circle of fifths. 
+                </p>
+                <p class="card-text">
+                    The triads should go in this order: 1 (major), 4 (major), 7 (diminished), 3 (minor), 6 (minor), 2
+                    (minor), 5 (major), 1 (back home).                    
+                </p>
+                <p class="card-text">
+                    Now play the same again, but this time vary the inversions you use to minimise how far your hand needs to move.
+                    For example, play 1 in root position, then 4 in second inversion, 7 in first, 3 in root, 6 in second etc.             
+                </p>
+            </div>
+        </div>
     </div>
 
 

@@ -1,4 +1,4 @@
-const WHITENOTEWIDTH = 40;
+const WHITENOTEWIDTH = 45;
 const WHITENOTEHEIGHT = WHITENOTEWIDTH * 5;
 const BLACKNOTEHEIGHT = WHITENOTEWIDTH * 2.7;
 const BLACKNOTEWIDTH = WHITENOTEWIDTH / 2;
@@ -96,10 +96,11 @@ canvases.forEach(canvas => {
 
 function drawKeyboard(canvas) {
     canvas.style.width = '100%';
+    canvas.style.maxWidth = '600px'
     let context = canvas.getContext("2d");
 
-    const TOP = 0;
-    const LEFT = 0;
+    const TOP = 2;
+    const LEFT = 2;
     const NUMBEROFOCTAVES = 8;
 
     let topLeft = LEFT;
@@ -136,15 +137,16 @@ function drawKeyboard(canvas) {
     let highest = keys.findIndex(k => k.name == canvas.dataset.highest);
     let shownKeys = keys.slice(lowest, highest + 1);
 
+    let numberOfWhiteKeys = shownKeys.filter(s => s instanceof WhiteNote).length;
+
+    canvas.height = WHITENOTEHEIGHT + 10;
+    canvas.width = numberOfWhiteKeys * WHITENOTEWIDTH + BLACKNOTEWIDTH + 10;
+
     const lowestKey = keys[lowest];
-    const highestKey = keys[highest];
     let lowestLeft = lowestKey.left;
 
-    lowestKey.blackNoteLeft = false;
-    highestKey.blackNoteRight = false;
-
     keys.forEach(n => {
-        n.left = n.left - lowestLeft;
+        n.left = n.left - lowestLeft + LEFT;
     });
     shownKeys.forEach(n => {      
         n.draw();
@@ -156,6 +158,23 @@ function drawKeyboard(canvas) {
         let noteSetSections = noteSet.split(':');
         let notes = noteSetSections.length > 0 ? noteSetSections[0].split(',') : [];
         let colour = noteSetSections.length > 1 ? noteSetSections[1] : PRESSCOLOUR;
+        switch(colour){
+            case '1':{
+                colour = '#ff6f69';
+                break;
+            }
+            case '2':{
+                colour = '#ffcc5c';
+                break;
+            }
+            case '3':{
+                colour = '#96ceb4';
+                break;
+            }
+        }
+
+        console.log(colour);
+
         notes.forEach(note => {
             keys.filter(k => k.name == note)[0].press(colour);
         });

@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7369445754123590"
+     crossorigin="anonymous"></script>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet"
+          href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+          crossorigin="anonymous">
+    <link rel="stylesheet" href="/styles.css">
+
+    <title>Building Blocks - Getting to know the Keyboard</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand"
+           href="/">Piano</a>
+    </nav>
+    <div class="container">
+        <h2 class="text-center py-4">Building Blocks - Getting to know the Keyboard</h2>
+        <dl class="row">
+            <dt class="col-sm-3">
+                Semitone
+            </dt>
+            <dd class="col-sm-9">
+                <p>The shortest possible distance between two notes on a piano.</p>
+                <canvas class="keyboard" data-lowest="c1" data-highest="gb2" data-notes="c1,db1:1;ab1,a1:2;e2,f2:3"></canvas>
+            </dd>
+            <dt class="col-sm-3">
+                Tone
+            </dt>
+            <dd class="col-sm-9">
+                <p>A distance of two semitones</p>
+                <canvas class="keyboard" data-lowest="c1" data-highest="gb2" data-notes="db1,eb1:1;a1,b1:2;eb2,f2:3"></canvas>
+            </dd>
+            <dt class="col-sm-3">
+                Octave
+            </dt>
+            <dd class="col-sm-9">
+                <p>12 semitones. The distance you travel to reach the closest note that is the 'same' note but higher or
+                lower.</p>
+                <canvas class="keyboard" data-lowest="c1" data-highest="gb2" data-notes="e1,e2:1"></canvas>
+            </dd>
+            <dt class="col-sm-3">
+                Note names
+            </dt>
+            <dd class="col-sm-9">
+                <p>
+                    The keyboard is made up of repeating sets of 12 notes. The 7 white notes are given the letter names A, B, C, D, E, F, G
+                </p>
+                <p>
+                    The 12 notes are shown highlighted here with 'A' on the left
+                </p>
+                <canvas class="keyboard" data-lowest="f1" data-highest="b2" data-notes="a1,bb1,b1,c2,db2,d2,eb2,e2,f2,gb2,g2,ab2:3"></canvas>
+            </dd>
+            <dt class="col-sm-3">
+                Sharps
+            </dt>
+            <dd class="col-sm-9">
+                <p>
+                    If the word 'sharp' (or symbol '#') is added to a note name, it means the note one semitone above the note named. For example C#
+                </p>
+                <canvas class="keyboard" data-lowest="f1" data-highest="b2" data-notes="db2:1"></canvas>
+            </dd>
+            <dt class="col-sm-3">
+                Flats
+            </dt>
+            <dd class="col-sm-9">
+                <p>
+                    If the word 'flat' (or symbol 'b') is added to a note name, it means the note one semitone below the note named. For example Bb
+                </p>
+                <canvas class="keyboard" data-lowest="f1" data-highest="b2" data-notes="bb1:2"></canvas>
+            </dd>         
+        </dl>
+        <a href="/scales1" class="link-primary mt-1 mb-3 float-right">Next - Scales 1</a>
+    </div>
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+            integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+            crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+            crossorigin="anonymous"></script>
+    <script src="/keyboard.js"></script>
+</body>
+
+</html>

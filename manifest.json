@@ -1,7 +1,7 @@
 {
     "theme_color": "#588c7e",
     "background_color": "#588c7e",
-    "display": "browser",
+    "display": "standalone",
     "scope": "/",
     "start_url": "/",
     "name": "Piano",

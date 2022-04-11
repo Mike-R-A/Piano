@@ -1,0 +1,9 @@
+{
+    "name": "Piano",
+    "short_name": "Piano",
+    "theme_color": "#588c7e",
+    "background_color": "#588c7e",
+    "display": "browser",
+    "scope": "/",
+    "start_url": "/"
+  }
